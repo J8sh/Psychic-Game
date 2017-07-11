@@ -1,0 +1,15 @@
+#title {
+	color: #99cc00;
+}
+
+#backimg {
+	
+
+}
+
+@media screen and (min-width: 960px){
+	#backimg {
+		
+		float: right;
+	}
+}
