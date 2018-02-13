@@ -11,32 +11,57 @@
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Psychic-Game</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Home</a>
-            <a class="nav-item nav-link active" href="#">Game <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="about.html">About</a>
+  <!-- fuild jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4"><strong>Psych!</strong></h1>
+          <p class="lead">A game where you will have to guess what letter the computer is thinking. 
+            <br>
+            If you run out of guesses, you lose!
+          </p>
+        </div>
+      </div>
+  <!-- Picture -->
+    <div class="row">
+      <!-- puicture here -->
+    </div>
+  <!-- Game -->
+    <div class="container-fulid">
+        <div class="row">
+          <div class="col-sm-12" id="game">
+            <h1 id="title">Game on!</h1>
           </div>
         </div>
-      </nav>
-  <!--Game-->
-    <div>
+
         <div class="row">
-          <div class="col-md-6 col-sm-12" id="game">
-            <p><h1 id="title"><strong>The Psychic Game</strong></h1></p>
+          <div class="col-sm-12" id="game">
             <p><h3>Guess what letter I'm thinking of</h3></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12" id="game">
             <p><h3>Wins: 0</h3></p>
+          </div>
+        </div>
+            
+        <div class="row">
+          <div class="col-sm-12" id="game">
             <p><h3>Losses: 0</h3></p>
+          </div>
+        </div>
+       
+        <div class="row">
+          <div class="col-sm-12" id="game">
             <p><h3>Guesses Left: 9</h3></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12" id="game">
             <p><h3>Your Guesses So Far: </h3></p>
           </div>
-          <img class="col-md-6 col-sm-12" id="backimg" src="assets/images/psych_1.jpg">
+        </div>
     </div>
   
   <script src="assets/javascript/game.js"></script>
