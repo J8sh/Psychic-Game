@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--for the icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -18,56 +20,83 @@
           <p class="lead">A game where you will have to guess what letter the computer is thinking. 
             <br>
             If you run out of guesses, you lose!
+            <br>
+            (Use the keyboard to guess the letter)
           </p>
         </div>
       </div>
-  <!-- Picture -->
-    <div class="row">
-      <!-- puicture here -->
-    </div>
+
   <!-- Game -->
-    <div class="container-fulid">
-        <div class="row">
-          <div class="col-sm-12" id="game">
+    <div class="container">
+        <div class="row title">
+          <div class="col-sm-12">
             <h1 id="title">Game on!</h1>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12" id="game">
-            <p><h3>Guess what letter I'm thinking of</h3></p>
+        <div class="row title">
+          <div class="col-sm-12">
+            <p>Guess what letter I'm thinking of</p>
           </div>
         </div>
 
+        <!-- Picture -->
         <div class="row">
-          <div class="col-sm-12" id="game">
-            <p><h3>Wins: 0</h3></p>
-          </div>
+          <img src="assets/images/psych_1.jpg" alt="Shawn and Gus Poster Picture" class="img">
         </div>
-            
-        <div class="row">
-          <div class="col-sm-12" id="game">
-            <p><h3>Losses: 0</h3></p>
+
+        <div class="container score">
+          <div class="row score">
+            <div class="col-sm-12 col-md-6 wins">
+              <p><h4>Wins: 0</h4></p>
+            </div>
+
+            <div class="col-sm-12 col-md-6 losses">
+              <p><h4>Losses: 0</h4></p>
+            </div>
           </div>
         </div>
        
         <div class="row">
-          <div class="col-sm-12" id="game">
+          <div class="col-sm-12 col-md-6" id="guessLeft">
             <p><h3>Guesses Left: 9</h3></p>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm-12" id="game">
+          <div class="col-sm-12 col-md-6" id="yourGuess">
             <p><h3>Your Guesses So Far: </h3></p>
           </div>
         </div>
+
     </div>
+
+  <!-- Footer -- 
+  <footer>
+      <div class="footWrapper">
+          <ul>
+              <li><a href="https://github.com/J8sh">
+                      <div data-icon="ei-sc-github" data-size="m"></div>
+                  </a>
+                  <a href="https://www.linkedin.com/in/joshigarcia/">
+                      <div data-icon="ei-sc-linkedin" data-size="m"></div>
+                  </a>
+                  <a href="https://twitter.com/j8sh">
+                      <div data-icon="ei-sc-twitter" data-size="m"></div>
+                  </a>
+                  <a href="https://www.instagram.com/josh_i_garcia/">
+                      <div data-icon="ei-sc-instagram" data-size="m"></div>
+                  </a>
+              </li>
+          </ul>
+          <div class="copyright"><i>&copy; Copyright 2018 Joshua Garcia</i></div>
+      </div>
+  </footer>-->
   
   <script src="assets/javascript/game.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--for the icons-->
+  <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
 </body>
 
 </html>
