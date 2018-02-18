@@ -46,7 +46,7 @@ document.onkeyup = function(event) {
   // records loss and resets game
   if (guessesLeft == 0) {
     losses++;
-    console.log("You lost!");
+    alert("You lost!");
     guessesLeft = 9;
     guessesSoFar = [];
     letterToBeGuessed = computerChoice[Math.floor(Math.random() * computerChoice.length)];
@@ -61,7 +61,7 @@ document.onkeyup = function(event) {
   // records win and resets game
   if (letterToBeGuessed == userGuess) {
     wins++;
-    console.log("You won!");
+    alert("You won!");
     guessesLeft = 9;
     guessesSoFar = [];
     letterToBeGuessed = computerChoice[Math.floor(Math.random() * computerChoice.length)];
@@ -82,7 +82,7 @@ document.onkeyup = function(event) {
   document.querySelector("#wins").innerHTML = winScore;
   document.querySelector("#losses").innerHTML = lossScore;
   document.querySelector("#guessLeft").innerHTML = guessVar;
-  document.querySelector("#yourGuess").innerHTML = guessSoFarVar;
+  //document.querySelector("#yourGuess").innerHTML = guessSoFarVar;
   
   // change color of numberLeft
   if (guessesLeft < 10 && guessesLeft > 7){
@@ -96,6 +96,18 @@ document.onkeyup = function(event) {
   }
   if (guessesLeft < 4){
     document.getElementById("numberLeft").style.color = "red";
+  }
+
+  // Fill in the guessSpace area with user guesses
+  var text = "";
+  for (i = 0; i < guessesSoFar.length; i++) {
+    var space = '<div class="guesses col"><h3>';
+    var guess = text += guessesSoFar[i] + " "; 
+    var space2 = '</h3></div>';
+    var complete = space + guess + space2;
+  }
+  if (guessesSoFar.length > 0){
+  document.querySelector(".guessSpace").innerHTML = complete;
   }
 
 }
