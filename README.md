@@ -1,6 +1,6 @@
 # Psychic-Game
 <h4>Focusing on JavaScript</h4>
-<br>
+<hr>
 <p>Using a var array for the computer to pick from.</p>
 <p>Using the Math.random function for the computer randomly choose a Letter.</p>
 <p>Using the if statements to create the conditions for the users</p>
