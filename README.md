@@ -1,5 +1,5 @@
 # Psychic-Game
-Focusing on JavaScript
+<h4>Focusing on JavaScript</h4>
 <br>
 <p>Using a var array for the computer to pick from.</p>
 <p>Using the Math.random function for the computer randomly choose a Letter.</p>
